@@ -1,33 +1,30 @@
 <!doctype html>
 <html>
     <head>
-       <title>addisonVotaWebpage</title> 
+        <title>Mr. P's Web Page</title>
     </head>
     <body>
-        <h1>hello world 🌎🌍🌏 ...</h1>
+        <h1>Hello World!...I mean the world wide web</h1>
+        <!--
+        <img src="dio.jpg">
+        -->
         
         <div>
             <label for="test1">test1</label>
             <input type="number" class="num1">
             <input type="submit" value="submit" class="submit">
-            <p class="results">nothing yet</p>
-            
-            
+            <p class="results">Nothing yet</p>
         </div>
     <script>
-        console.log("we are inside the web");
-        alert("hello world! :) ");
-        var compute = document.querySelector(".submit");
+    console.log("We are inside the web!");
+    alert("Hello World! :)");
+    var compute = document.querySelector(".submit");
         
-        function test(){
-            document.querySelector(".results").innerHTML = parseInt(document.querySelector("num1").value);
-        }
-        compute.addEventListener("click",test);
-    </script>    
+    function test(){
+        document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
+    }
+    compute.addEventListener("click", test);
+    </script>
+    </body>
     
-   
-    
-    
-    <img src="dio.jpg" alt="dio">
-     </body>
-</html>     
+</html>
