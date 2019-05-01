@@ -11,13 +11,13 @@
         
         <div>
             <label for="sidea">side a</label>
-            <input type="number" class="num1">
+            <input type="number" value='0' class="num1">
             
             
         </div>
         <div>
             <label for="sideb">side b</label>
-            <input type="number" class="num1">
+            <input type="number" value='0' class="num1">
           
            
         </div>
@@ -30,11 +30,23 @@
     console.log("We are inside the web!");
     //alert("Hello World! :)");
     var compute = document.querySelector(".submit");
+    function pythagorus(){
+        var a = parseFloat(document.querySelector('.sideA').value());
+        console.log(a);
+        
+        var b =  parseFloat(document.querySelector('.sideB').value());
+        console.log(b);
+        
+        var out = document.querySelector('.results');
+        var c = Math.sqrt(Math.pow(a, 2)+ Math.pow(b, 2));
+        
+        document.querySelector('results').innerHTML = parseInt(document.querySelector('num1').value());
+    }
         
     function test(){
         document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
     }
-    compute.addEventListener("click", test);
+    compute.addEventListener("click", pythagorus);
     </script>
     </body>
     
