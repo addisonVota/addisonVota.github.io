@@ -10,48 +10,50 @@
         
         
         <div>
-            <label for="sideA">side a</label>
+            <label for="sideA">input 1</label>
             <input type="number" value='0' class="sideA">
             
             
         </div>
         <div>
-            <label for="sideB">side b</label>
+            <label for="sideB">input 2</label>
             <input type="number" value='0' class="sideB">
           
            
         </div>
         <div>
-        <label for="sideC">side c</label> 
+        <label for="results">side c</label> 
           <input type="submit" value="submit" class="submit">
          <p class="results">Nothing</p>
+         <p class="sum">nothing</p>
+         <p class="difference">nothing</p>
          </div>
     <script>
+    
     console.log("We are inside the web!");
     //alert("Hello World! :)");
     var compute = document.querySelector(".submit");
-    function pythagorus(){
+    function calculator(){
         var a = parseFloat(document.querySelector('.sideA').value);
         console.log(a);
         
         var b =  parseFloat(document.querySelector('.sideB').value);
         console.log(b);
         
-        
         var out = document.querySelector('.results');
         var c = Math.sqrt(Math.pow(a, 2)+ Math.pow(b, 2));
         
-        out.innerHTML = parseFloat(c);
+        sum.innerHTML = a + b;
         
        
     }
+    
         
     function test(){
         document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
     }
-    compute.addEventListener("click", pythagorus);
+    compute.addEventListener("click", calculator);
     </script>
     </body>
     
 </html>
-
