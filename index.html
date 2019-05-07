@@ -40,8 +40,8 @@
         var b =  parseFloat(document.querySelector('.sideB').value);
         console.log(b);
         
-        var out = document.querySelector('.results');
-        var c = Math.sqrt(Math.pow(a, 2)+ Math.pow(b, 2));
+        var sum = document.querySelector('.sum');
+        var c = document.querySelector('.difference');
         
         sum.innerHTML = a + b;
         
@@ -49,11 +49,12 @@
     }
     
         
-    function test(){
-        document.querySelector(".results").innerHTML = parseInt(document.querySelector(".num1").value);
-    }
+    
     compute.addEventListener("click", calculator);
     </script>
     </body>
     
 </html>
+
+
+
