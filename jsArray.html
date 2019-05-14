@@ -22,8 +22,13 @@
  
     
     function reply(){
-        var radios = document.getElementsByname('response');
-        console.log(radios);
+        var radios = document.getElementsByName('response');
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+                out.innerHTML = radios[i].value;
+                break;
+            }
+        }
     }
     
     submit.addEventListener('click', reply);
@@ -31,6 +36,12 @@
     </body>
     
 </html>
+
+
+
+
+
+
 
 
 
