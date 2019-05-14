@@ -13,7 +13,7 @@
               
         </div>
         <input type='submit' value='submit' class='submit'>
-        <p class-"out">nothing yet</p>
+        <p class="out">nothing yet</p>
     <script>
     var submit = document.querySelector('.submit');
     var out = document.querySelector('.out');
@@ -21,13 +21,22 @@
     
  
     
-    for(var i = 0; i < arr.length; i++){
-        console.log(arr[i]);
+    function reply(){
+        var radios = document.getElementsByname('response');
+        console.log(radios);
     }
+    
+    submit.addEventlistener('click', reply)
     </script>
     </body>
     
 </html>
+
+
+
+
+
+
 
 
 
