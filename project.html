@@ -16,14 +16,14 @@
       function aid(){
         var radios = document.getElementsByName('response');
         for(var i = 0; i < radios.length; i++){
-            if(radios[i].checked == "burn"){
+            if(radios[i].checked.value == "burn"){
               out.innerHTML = "okay now  you check if the area is safe.<br>\
                                 okay now you put on gloves.<br>\
                                 okay now you send frends to go get help.<br>\
                                 okay now  you bandage the burn and wait for help to arrive.";
               break;
             }
-            if(radios[i].checked =="laceration"){
+            if(radios[i].checked.value =="laceration"){
               out.innerHTML = "okay now you check if the area is safe.'\n\
                               okay now you put on gloves.\n\
                               okay now you send frends to go get help.\n\
@@ -37,6 +37,11 @@
       </script>
     </body>     
 </html>
+    
+    
+    
+    
+    
     
     
     
