@@ -1,34 +1,69 @@
 <html>
     <title>project</title>
-    situation = ['burn', 'laceration']
-    <p>'<br>Welcome to first aid simulator.<br>Please select a situation<br>'</p>
-    
-    for i in situation:
-      <p>'{} '.formati, end=''
-    <p>'<br>'
-    
-    <input'Enter your situation: '>
-    
-    <if> selection == "burn":
-       <p>'okay now  you check if the area is safe.'</p>
-       
-       <p>'okay now you put on gloves.'</p>
-       
-       <p>'okay now you send frends to go get help.'</p> 
-       
-       <p>'okay now  you bandage the burn and wait for help to arrive. '</p>
-                 
-    
-    </elseif> selection == "laceration":
-      <p>'okay now you check if the area is safe.'</p>
+    <body>
+      <p>Welcome to first aid simulator. Please select a situation</p>
+       <div>
+            <input type='radio' name='response'value='burn'>Burn<br>
+            <input type='radio' name='response'value='laceration'>Laceration<br>
+        </div>
+        <input type='submit' value='submit' class='submit'>
+        <p class="out">nothing yet</p>
       
-      <p>'okay now you put on gloves.'</p>
+      <script>
+      var submit = document.querySelector('.submit');
+      var out = document.querySelector('.out');  
       
-      <p>'okay now you send frends to go get help.'</p>
-      
-      <p>'okay now you bandage the laceration and wait for help to arrive and do not use a turnekit unless absolutly nessecary.  '</p>
-                 
+      function aid(){
+        var radios = document.getElementsByName('response');
+        for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked == "burn"){
+                out.innerHTML = "okay now  you check if the area is safe.\n\
+                                okay now you put on gloves.\n\
+                                okay now you send frends to go get help.\n\
+                                okay now  you bandage the burn and wait for help to arrive.";
+                break;
+            }
+            else{
+              out.innerHTML = "okay now you check if the area is safe.'\n\
+                              okay now you put on gloves.\n\
+                              okay now you send frends to go get help.\n\
+                              okay now you bandage the laceration and wait for help to arrive and do not\
+                              use a turnekit unless absolutly nessecary."; 
+            }
+        }
+      }
+      submit.addEventListener("click", aid);
+      </script>
+    </body>     
 </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
   
 
