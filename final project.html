@@ -3,6 +3,67 @@
         <title>finalProject</title>
     </head>
     <input>odd or even</input>
+<body>
+        <h1>Hello World!...</h1>
+        
+        <img src="dio.jpg">
+        
+        
+        <div>
+            <label for="sideA">input 1</label>
+            <input type="number" value='0' class="sideA">
+            
+            
+        </div>
+        <div>
+            <label for="sideB">input 2</label>
+            <input type="number" value='0' class="sideB">
+          
+           
+        </div>
+        <div>
+        <label for="results">side c</label> 
+          <input type="submit" value="submit" class="submit">
+         <p class="results">Nothing</p>
+         <p class="sum">nothing</p>
+         <p class="difference">nothing</p>
+         <p class="product">nothing</p>
+         <p class="quotient">nothing</p>
+         </div> 
+         <div>
+             <input type="radio" name='response' value = "yes" class="yes" checked> yes<br>
+             <input type="radio" name='response' value = "no" class="no" > No<br>
+         </div>
+    <script>
+    
+    console.log("We are inside the web!");
+    //alert("Hello World! :)");
+    var compute = document.querySelector(".submit");
+    function calculator(){
+        var a = parseFloat(document.querySelector('.sideA').value);
+        console.log(a);
+        
+        var b =  parseFloat(document.querySelector('.sideB').value);
+        console.log(b);
+        
+        var sum = document.querySelector('.sum');
+        var difference = document.querySelector('.difference');
+         var product = document.querySelector('.product');
+          var quotient = document.querySelector('.quotient');
+        
+        sum.innerHTML = a + b;
+        difference.innerHTML = a - b;
+        product.innerHTML = a * b;
+        quotient.innerHTML = a / b;
+        
+       
+    }
+    
+        
+    
+    compute.addEventListener("click", calculator);
+    </script>
+    </body>
 <script>
     conditional (condition) {
 		var randoNumb = Math.floor(Math.random()*10);
