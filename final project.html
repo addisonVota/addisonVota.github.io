@@ -2,6 +2,10 @@
     <head>
         <title>finalProject</title>
     </head>
+	<div>
+		 <input type='radio' name='response'value='odd'>odd<br>
+          <input type='radio' name='response'value='even'>even<br>
+	</div>
     <input>odd or even</input>
 
 <script>
@@ -28,7 +32,27 @@ class OddOrEven
          System.out.println("The number is odd.");
    }
 }
-</script>	
+</script>
+<script>
+	var submit = document.querySelector('.submit');
+      var out = document.querySelector(".out");
+      
+      function aid(){
+        var radios = document.getElementsByName('response');
+        for(var i = 0; i < radios.length; i++){
+          if(radios[i].checked){
+            if(radios[i].value == "even"){
+              out.innerHTML = you win
+              break;
+            }
+            if(radios[i].value =="odd"){
+              out.innerHTML = you lose try again
+              break;
+            }
+          }
+        }
+      }
+      submit.addEventListener("click", aid);
 	
 </html>
 
