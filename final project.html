@@ -10,7 +10,7 @@
  <div>
              <input type="radio" name='response' value = "odd" class="odd" checked> odd<br>
              <input type="radio" name='response' value = "even" class="even" > even<br>
-	 <input type="submit" value="submit" class="submit">
+	 <input type="submit" value="submit" class="submit" onclick'evenorodd'>
          </div>
 
 <script>
@@ -42,7 +42,7 @@ class OddOrEven
 	var submit = document.querySelector('.submit');
       var out = document.querySelector(".out");
       
-      function aid(){
+      function evenorodd(){
         var radios = document.getElementsByName('response');
         for(var i = 0; i < radios.length; i++){
           if(radios[i].checked){
