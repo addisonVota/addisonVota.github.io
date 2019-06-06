@@ -13,8 +13,9 @@ body{
 }
 p {
     font-size: x-large;
-    font-family: fantasy;
+    
     color: blue;
+    font-family: 'Roboto', sans-serif;
 }
 .q1{
     font-size: x-large;
