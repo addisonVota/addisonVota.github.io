@@ -8,8 +8,8 @@
 	</div>
     
  <div>
-             <input type="radio" name='response' value = "odd" class="odd" checked> odd<br>
-             <input type="radio" name='response' value = "even" class="even" > even<br>
+             <input type="radio" name='response' value = "odd" id="odd" checked> odd<br>
+             <input type="radio" name='response' value = "even" id="even" > even<br>
 	 <input type="submit" value="submit" class="submit" onclick="evenorodd">
          </div>
 
@@ -58,6 +58,13 @@ class OddOrEven
         }
       }
       submit.addEventListener("click", evenorodd);
+	
+function isEven(value) {
+	if (value%2 == 0)
+		return true;
+	else
+		return false;
+}
 	
 </html>
 
